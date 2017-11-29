@@ -1,0 +1,106 @@
+body,p,div,ul,li,ol,dl,table,tr,td{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+}
+#container{
+    width: 60%;
+    margin: 50px auto;
+    position: relative;
+}
+#grid{
+    width: 100%;
+    border-collapse: collapse;
+}
+#grid tr{
+    width: 100%;
+}
+#grid td{
+    width: 3.333%;
+    height: 0;
+    padding-bottom: 3.333%;
+    border: 1px solid #000;
+}
+.snake{
+    background-color: #000;
+}
+.food{
+    background-color: #fffdbd;
+}
+.wall{
+    background-color: #ff6c5e;
+}
+#bar{
+    width: 280px;
+    height: 26px;
+    line-height: 26px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(63, 171, 207, 0.4);
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+}
+#cover{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.menu{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+#result{
+    display: none;
+}
+#result p{
+    font-size: 24px;
+}
+#result>div{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+.menu p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+    cursor: pointer;
+}
+#description{
+    color: #ffffff;
+}
+#fail p{
+    color: tomato;
+}
+#success p{
+    color: darkcyan;
+}
